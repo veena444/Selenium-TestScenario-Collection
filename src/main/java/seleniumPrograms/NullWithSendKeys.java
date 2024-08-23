@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /*
- * Is it possible to enter 'null' values using sendKeys() method?
+ * Can we enter 'null' values in sendKeys() method?
  * 
- * It will throw an exception : IllegalArgumentException: Keys to send should be a not null CharSequence
+ * If we send 'null' values it will throw an exception : IllegalArgumentException: Keys to send should be a not null CharSequence
  * 
  * If we look at the implementation of sendKeys() method; it says if keysToSend is equal to null or keysToSend.length == 0 then 
  * throw an exception 'IllegalArgumentException("Keys to send should be a not null CharSequence").

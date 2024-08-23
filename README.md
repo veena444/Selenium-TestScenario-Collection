@@ -1,1 +1,1 @@
-Handling different scenarios in Selenium 4.x
+Collection of different automation scenarios in Selenium 4.x

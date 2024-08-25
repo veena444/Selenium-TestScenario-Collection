@@ -53,9 +53,9 @@ public class DfiierentWaysToCreateDriverObject {
 		
 		//2. valid and recommended, it can be used for cross browser testing. Most preferable way to create driver object.
 		WebDriver driver = new ChromeDriver();
-		driver = new FirefoxDriver();
-		driver = new EdgeDriver();
-		driver = new SafariDriver();		
+//		driver = new FirefoxDriver();
+//		driver = new EdgeDriver();
+//		driver = new SafariDriver();		
 		
 		
 		//3. valid and recommended, but we generally don't use it
@@ -74,6 +74,8 @@ public class DfiierentWaysToCreateDriverObject {
 		
 		//7. valid and recommended, used when we need to connect to remote machine
 //		WebDriver driver = new RemoteWebDriver(remoteAddress,capabilities);
+		
+		driver.quit();
 
 	}
 

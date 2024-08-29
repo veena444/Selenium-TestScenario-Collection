@@ -24,6 +24,8 @@ public class VerifyElementIsSelected {
 		boolean afterClick = isElementSelected(privacyPolicyCheckBox);
 		System.out.println(afterClick); //true
 		
+		driver.quit();
+		
 
 	}
 	

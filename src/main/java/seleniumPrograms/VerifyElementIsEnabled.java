@@ -16,6 +16,7 @@ public class VerifyElementIsEnabled {
 		
 		boolean pwdField = isElementEnabled(password);
 		System.out.println(pwdField);//false
+		driver.quit();
 		
 
 	}

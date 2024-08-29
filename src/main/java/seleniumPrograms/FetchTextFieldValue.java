@@ -22,6 +22,7 @@ public class FetchTextFieldValue {
 		
 		String pwdAttributeName = elementGetAttribute(password,"placeholder");
 		System.out.println(pwdAttributeName);
+		driver.quit();
 
 	}
 	

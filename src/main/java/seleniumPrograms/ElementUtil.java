@@ -1,5 +1,8 @@
 package seleniumPrograms;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +23,15 @@ public class ElementUtil {
 	 */
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);
+	}
+	
+	/**
+	 * This method is used to find the elements.
+	 * @param locator
+	 * @return Returns List<WebElement>
+	 */
+	public List<WebElement> getElements(By locator){
+		return driver.findElements(locator);
 	}
 	
 	/**
@@ -89,6 +101,42 @@ public class ElementUtil {
 	 */
 	public String elementGetAttribute(By locator, String attrName) {
 		return getElement(locator).getAttribute(attrName);
+	}
+	/**
+	 * This method is used to get the elements count.
+	 * @param locator
+	 * @return Returns the elements count.
+	 */
+	public int getElementsCount(By locator) {
+		return getElements(locator).size();
+	}
+	
+	/**
+	 * This method is used to get the element text list.
+	 * @param locator
+	 * @return Returns the List<String>
+	 */
+	public List<String> getElementTextList(By locator) {
+		List<WebElement> elementLists = getElements(locator);
+		List<String> elementTextList = new ArrayList<String>();
+		for(WebElement e: elementLists) {
+			String elementText = e.getText();
+			if(elementText.length() != 0) {
+				elementTextList.add(elementText);
+			}			
+		}
+		return elementTextList;
+	}
+	
+	/**
+	 * This method is used to print the element list.
+	 * @param locator
+	 */
+	public void printElementList(By locator) {
+		List<String> eleTextList = getElementTextList(locator);
+		for(String e: eleTextList) {
+			System.out.println(e);
+		}
 	}
 
 }

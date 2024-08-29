@@ -51,7 +51,7 @@ public class FindTotalNoOfLinksInAWebPage {
 		printElementList(links);
 		
 		
-//		driver.quit();
+		driver.quit();
 		
 	}
 	

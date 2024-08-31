@@ -70,7 +70,7 @@ public class DfiierentWaysToCreateDriverObject {
 //		ChromiumDriver driver = new ChromeDriver();
 		
 		//6. valid but not recommended, we can access only two methods findElement() & findElements()
-//		SearchContext driver = new ChromeDriver();
+//		SearchContext driver = new RemoteWebDriver();
 		
 		//7. valid and recommended, used when we need to connect to remote machine
 //		WebDriver driver = new RemoteWebDriver(remoteAddress,capabilities);

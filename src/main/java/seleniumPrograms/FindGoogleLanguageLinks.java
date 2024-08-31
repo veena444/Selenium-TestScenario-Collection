@@ -24,6 +24,7 @@ public class FindGoogleLanguageLinks {
 		List<String> languageLinksText = findLanguageLinks(languageLinks);
 		System.out.println(languageLinksText);
 		
+		driver.quit();
 		
 //		List<WebElement> languageLinksList = driver.findElements(By.xpath("//div[@id='SIvCob']/a"));
 //		int totalLangLinks = languageLinksList.size();

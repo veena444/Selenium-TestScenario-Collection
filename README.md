@@ -1,1 +1,1 @@
-Collection of different automation scenarios in Selenium 4.x
+Collection of different automation scenarios using Selenium 4.x with Java.

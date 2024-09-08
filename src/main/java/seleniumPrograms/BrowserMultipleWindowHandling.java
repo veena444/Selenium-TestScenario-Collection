@@ -49,6 +49,7 @@ public class BrowserMultipleWindowHandling {
 		
 		driver.switchTo().window(parentWindowID);
 		System.out.println("Parent window title: "+driver.getTitle());
+		driver.quit();
 
 
 	}

@@ -18,7 +18,7 @@ public class CalendarHandling {
 //		selectFutureDate("November 2024", 30);
 //		selectPreviousDate("February 2024", 29);
 
-//		driver.quit();
+		driver.quit();
 
 	}
 

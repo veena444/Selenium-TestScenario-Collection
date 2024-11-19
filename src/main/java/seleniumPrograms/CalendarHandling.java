@@ -14,10 +14,11 @@ public class CalendarHandling {
 		driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
 
 		driver.findElement(By.id("datepicker")).click();
-		selectFutureDate("November 2024", 30);
+		selectDate(19);
+//		selectFutureDate("November 2024", 30);
 //		selectPreviousDate("February 2024", 29);
 
-		driver.quit();
+//		driver.quit();
 
 	}
 
@@ -54,6 +55,7 @@ public class CalendarHandling {
 		selectDate(day);
 
 	}
+	
 
 	public static boolean isValidDate(String expMonthYear, int day) {
 		if (day <= 0 || day > 31 || (expMonthYear.contains("February") && day > 29)) {
